@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="QuestionTypeCV" customModule="Trivia_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="200" height="200"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zwx-xm-H9e" customClass="CustomView" customModule="Trivia_app" customModuleProvider="target">
+                        <rect key="frame" x="5" y="5" width="190" height="190"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Multiple-Choice" translatesAutoresizingMaskIntoConstraints="NO" id="kUQ-y2-DO3">
+                                <rect key="frame" x="10" y="10" width="170" height="140"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MCQ" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n8W-L6-eQm">
+                                <rect key="frame" x="10" y="160" width="170" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="T1P-vB-Prr"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tmx-rJ-V0A" customClass="CustomView" customModule="Trivia_app" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                <color key="backgroundColor" name="ThemeColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="6Md-wC-BCh"/>
+                                    <constraint firstAttribute="height" constant="20" id="daq-nV-Q35"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="n8W-L6-eQm" secondAttribute="trailing" constant="10" id="6RF-t4-hK7"/>
+                            <constraint firstItem="Tmx-rJ-V0A" firstAttribute="top" secondItem="zwx-xm-H9e" secondAttribute="top" id="ANq-WE-2KB"/>
+                            <constraint firstItem="kUQ-y2-DO3" firstAttribute="top" secondItem="zwx-xm-H9e" secondAttribute="top" constant="10" id="Ck6-2R-fGd"/>
+                            <constraint firstItem="kUQ-y2-DO3" firstAttribute="leading" secondItem="zwx-xm-H9e" secondAttribute="leading" constant="10" id="IbM-Zf-sjI"/>
+                            <constraint firstItem="n8W-L6-eQm" firstAttribute="leading" secondItem="zwx-xm-H9e" secondAttribute="leading" constant="10" id="M0q-SM-osr"/>
+                            <constraint firstItem="Tmx-rJ-V0A" firstAttribute="leading" secondItem="zwx-xm-H9e" secondAttribute="leading" id="QE7-D6-bkp"/>
+                            <constraint firstItem="n8W-L6-eQm" firstAttribute="top" secondItem="kUQ-y2-DO3" secondAttribute="bottom" constant="10" id="Tb4-rA-r9O"/>
+                            <constraint firstAttribute="width" constant="190" id="cGy-d3-8L5"/>
+                            <constraint firstAttribute="height" constant="190" id="jaD-V4-69t"/>
+                            <constraint firstAttribute="bottom" secondItem="n8W-L6-eQm" secondAttribute="bottom" constant="10" id="sw3-VW-xzW"/>
+                            <constraint firstAttribute="trailing" secondItem="kUQ-y2-DO3" secondAttribute="trailing" constant="10" id="um6-Rh-38w"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="15"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                <real key="value" value="0.29999999999999999"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                <size key="value" width="1" height="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                <real key="value" value="3"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" systemColor="labelColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="zwx-xm-H9e" secondAttribute="trailing" constant="5" id="6sa-sR-Hmv"/>
+                <constraint firstAttribute="bottom" secondItem="zwx-xm-H9e" secondAttribute="bottom" constant="5" id="ol8-JL-wvr"/>
+                <constraint firstItem="zwx-xm-H9e" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="5" id="sEL-tx-dZa"/>
+                <constraint firstItem="zwx-xm-H9e" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="5" id="sxa-yx-T1b"/>
+            </constraints>
+            <size key="customSize" width="189" height="191"/>
+            <connections>
+                <outlet property="ChoiceImage" destination="kUQ-y2-DO3" id="Srf-ay-MOh"/>
+                <outlet property="bgView" destination="zwx-xm-H9e" id="QuA-z7-XZi"/>
+                <outlet property="cellWidth" destination="cGy-d3-8L5" id="h9O-RF-LKu"/>
+                <outlet property="lblTitle" destination="n8W-L6-eQm" id="etr-gu-pe4"/>
+                <outlet property="selectedView" destination="Tmx-rJ-V0A" id="B8e-7V-nSa"/>
+            </connections>
+            <point key="canvasLocation" x="-38.405797101449281" y="110.82589285714285"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="Multiple-Choice" width="108" height="108"/>
+        <namedColor name="ThemeColor">
+            <color red="0.082000002264976501" green="0.32899999618530273" blue="0.43900001049041748" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

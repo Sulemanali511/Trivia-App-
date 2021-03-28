@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Answers" representedClassName="Answers" syncable="YES" codeGenerationType="class">
+        <attribute name="isCorrect" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="statement" optional="YES" attributeType="String"/>
+        <relationship name="question" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Questions" inverseName="answers" inverseEntity="Questions"/>
+    </entity>
+    <entity name="GamePlay" representedClassName="GamePlay" syncable="YES" codeGenerationType="class">
+        <attribute name="gamemode" optional="YES" attributeType="String"/>
+        <attribute name="username" optional="YES" attributeType="String"/>
+        <relationship name="questions" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Questions" inverseName="usermode" inverseEntity="Questions"/>
+    </entity>
+    <entity name="Questions" representedClassName="Questions" syncable="YES" codeGenerationType="class">
+        <attribute name="category" optional="YES" attributeType="String"/>
+        <attribute name="difficulty" optional="YES" attributeType="String"/>
+        <attribute name="isSolved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="points" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="question" optional="YES" attributeType="String"/>
+        <attribute name="type" optional="YES" attributeType="String"/>
+        <relationship name="answers" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Answers" inverseName="question" inverseEntity="Answers"/>
+        <relationship name="usermode" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GamePlay" inverseName="questions" inverseEntity="GamePlay"/>
+    </entity>
+    <elements>
+        <element name="Answers" positionX="-45" positionY="81" width="128" height="74"/>
+        <element name="GamePlay" positionX="-63" positionY="-18" width="128" height="74"/>
+        <element name="Questions" positionX="-54" positionY="18" width="128" height="149"/>
+    </elements>
+</model>

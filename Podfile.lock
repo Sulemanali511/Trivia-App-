@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (5.4.1)
+  - IQKeyboardManagerSwift (6.5.6)
+  - SVProgressHUD (2.2.5)
+  - SwiftMessages (9.0.0):
+    - SwiftMessages/App (= 9.0.0)
+  - SwiftMessages/App (9.0.0)
+  - SwiftyJSON (5.0.0)
+  - Toast-Swift (5.0.1)
+
+DEPENDENCIES:
+  - Alamofire
+  - IQKeyboardManagerSwift
+  - SVProgressHUD
+  - SwiftMessages
+  - SwiftyJSON
+  - Toast-Swift
+
+SPEC REPOS:
+  trunk:
+    - Alamofire
+    - IQKeyboardManagerSwift
+    - SVProgressHUD
+    - SwiftMessages
+    - SwiftyJSON
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  Alamofire: 2291f7d21ca607c491dd17642e5d40fdcda0e65c
+  IQKeyboardManagerSwift: c7df9d2deb356c04522f5c4b7b6e4ce4d8ed94fe
+  SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
+  SwiftMessages: 55274ca3a239062398603008ed81924cfd1fe798
+  SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
+  Toast-Swift: 9b6a70f28b3bf0b96c40d46c0c4b9d6639846711
+
+PODFILE CHECKSUM: ad3b6f647d12def0ef2097152b9444f2707c8642
+
+COCOAPODS: 1.10.1

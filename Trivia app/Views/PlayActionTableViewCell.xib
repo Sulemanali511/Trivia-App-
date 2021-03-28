@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="PlayActionTableViewCell" customModule="Trivia_app" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="654" height="130"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="654" height="130"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6fX-Xn-DVL" customClass="CustomView" customModule="Trivia_app" customModuleProvider="target">
+                        <rect key="frame" x="20" y="60" width="614" height="60"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Play" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vec-ZF-IDG">
+                                <rect key="frame" x="0.0" y="0.0" width="614" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3E-gQ-8xc">
+                                <rect key="frame" x="0.0" y="0.0" width="614" height="60"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="btnActionPlay:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="5ug-c8-RsK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="60" id="2pH-6X-T4Z"/>
+                            <constraint firstItem="c3E-gQ-8xc" firstAttribute="top" secondItem="6fX-Xn-DVL" secondAttribute="top" id="5Tb-YN-YVF"/>
+                            <constraint firstItem="c3E-gQ-8xc" firstAttribute="leading" secondItem="6fX-Xn-DVL" secondAttribute="leading" id="D97-fN-fPa"/>
+                            <constraint firstAttribute="bottom" secondItem="c3E-gQ-8xc" secondAttribute="bottom" id="YbK-tq-ka5"/>
+                            <constraint firstAttribute="trailing" secondItem="c3E-gQ-8xc" secondAttribute="trailing" id="dZC-mN-Ovz"/>
+                            <constraint firstAttribute="trailing" secondItem="vec-ZF-IDG" secondAttribute="trailing" id="hPf-iT-TzR"/>
+                            <constraint firstAttribute="bottom" secondItem="vec-ZF-IDG" secondAttribute="bottom" id="llw-5V-FA5"/>
+                            <constraint firstItem="vec-ZF-IDG" firstAttribute="leading" secondItem="6fX-Xn-DVL" secondAttribute="leading" id="nLY-QT-ifv"/>
+                            <constraint firstItem="vec-ZF-IDG" firstAttribute="top" secondItem="6fX-Xn-DVL" secondAttribute="top" id="vzs-t0-LjM"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="60"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="6fX-Xn-DVL" firstAttribute="top" relation="greaterThanOrEqual" secondItem="H2p-sc-9uM" secondAttribute="top" constant="50" id="2Oi-gv-ZKi"/>
+                    <constraint firstItem="6fX-Xn-DVL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="Puy-5t-DQC"/>
+                    <constraint firstAttribute="bottom" secondItem="6fX-Xn-DVL" secondAttribute="bottom" constant="10" id="U8q-zd-rLC"/>
+                    <constraint firstAttribute="trailing" secondItem="6fX-Xn-DVL" secondAttribute="trailing" constant="20" id="VhE-mH-iwI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="bgView" destination="6fX-Xn-DVL" id="eJr-Av-WIe"/>
+            </connections>
+            <point key="canvasLocation" x="231.8840579710145" y="53.571428571428569"/>
+        </tableViewCell>
+    </objects>
+</document>
