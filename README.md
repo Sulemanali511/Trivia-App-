@@ -11,7 +11,7 @@ this is swift base IOS Application,this is simple question answer game Trivia, f
 in classic mode you can choose Setting for the game like Level of game, Question categories , and type of questions either multiple or tru/false.
 
 ## What has been done 
-basic requirements of the given task are done due to bussy weakend i try my best to write clean the code but may find some blunder or improvements.
+basic requirements of the given task are done due to busy weekend i try my best to write clean the code but may find some blunder or improvements.
 ## third parties 
 i use cocoapods of following 
   1. SwiftyJSON.  for json parsing because i think this is reliable for me  
@@ -21,7 +21,7 @@ i use cocoapods of following
   5. IQKeyboardManagerSwift.  handle the keyboard stuff.
   6. SwiftMessages. show the message or banner to users 
 ### Any known bugs or issues in the app
-i did see any bug or crash but there are a no of improvement that may be under working in future as i said i was bussy so i did spend time on this.
+i did see any bug or crash but there are a no of improvement that may be under working in future as i said i was busy so i did spend time on this.
 ### Any improvements you see that can be made in the app 
 colour scheme and text on the app should be improved and before starting the game there should be rules and regulation that user must know, a popup with this type of stuff, i have design but not showing due to time and content that have to show  
 ### Built With
