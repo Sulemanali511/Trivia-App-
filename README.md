@@ -31,7 +31,7 @@ this project should be build on Xcode
 
 <!-- GETTING STARTED -->
 ## Getting Started
-clone the code on your mac. and install the pod files (initially i put all cocoapods)
+clone the code on your mac. and install the pod files (initially i put all cocoapods without put in ignore file)
 
 
 
@@ -49,7 +49,7 @@ clone the code on your mac. and install the pod files (initially i put all cocoa
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-install the cocoapods and add you provisioning profile and attach you mobile and run you application 
+install the cocoapods and add you provisioning profile and attach you mobile and run your application 
 
 
 
