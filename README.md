@@ -3,22 +3,6 @@
 
 
 
-<!-- PROJECT SHIELDS -->
-<!--
-this is swift base IOS Application
--->
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
-<!-- PROJECT LOGO -->
-
-
 
 
 <!-- ABOUT THE PROJECT -->
@@ -53,12 +37,12 @@ clone the code on your mac. and install the pod files (initially i put all cocoa
 
 ### Installation
 
-  pod 'SwiftyJSON'
-  pod 'Alamofire'
-  pod 'Toast-Swift'
-  pod 'SVProgressHUD'
-  pod 'IQKeyboardManagerSwift'
-  pod 'SwiftMessages'
+  1. pod 'SwiftyJSON'
+  2. pod 'Alamofire'
+  3. pod 'Toast-Swift'
+  4. pod 'SVProgressHUD'
+  5. pod 'IQKeyboardManagerSwift'
+  6. pod 'SwiftMessages'
 
 
 
